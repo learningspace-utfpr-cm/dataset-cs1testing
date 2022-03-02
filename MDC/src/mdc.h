@@ -1,11 +1,6 @@
-#ifndef MONEY_H
-#define MONEY_H
+#ifndef MDC_H
+#define MDC_H
 
-typedef struct Money Money;
+int mdc(int a, int b);
 
-Money *create_money(int amount, char *currenty);
-int money_amount(Money *m);
-char *money_currency(Money *m);
-void money_free(Money *m);
-
-#endif  /* MONEY_H */
+#endif
