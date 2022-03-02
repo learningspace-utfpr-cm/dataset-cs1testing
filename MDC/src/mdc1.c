@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include "mdc.h"
 
 int mdc (int a, int b){
 	int resto;
