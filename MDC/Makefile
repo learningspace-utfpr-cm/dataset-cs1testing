@@ -11,7 +11,7 @@ GCOV = gcovr
 GCONV_FLAGS = -r . --html --html-details 
 
 
-all: coverage_report.html
+all: report
 
 mdc%.o: $(addprefix $(SRC_DIR)/, mdc%.c) $(addprefix $(SRC_DIR)/, mdc.h)
 	$(CC) $(CFLAGS) $(PROFILE_FLAGS) $<
@@ -19,16 +19,16 @@ mdc%.o: $(addprefix $(SRC_DIR)/, mdc%.c) $(addprefix $(SRC_DIR)/, mdc.h)
 check_mdc.o: $(TST_FILES)
 	$(CC) $(CFLAGS) $(PROFILE_FLAGS) $(TST_FILES) 
 
-check_mdc_tests%: mdc%.o check_mdc.o
-	$(CC) $< check_mdc.o $(TST_LIBS) $(COV_LIBS) -o check_mdc_tests
+check_mdc%: mdc%.o check_mdc.o
+	$(CC) $< check_mdc.o $(TST_LIBS) $(COV_LIBS) -o check_mdc_runner
 
-test: check_mdc_tests
-	./check_mdc_tests
+test: check_mdc_runner
+	-./check_mdc_runner
 
-coverage_report.html: test
+report: test
 	$(GCOV) $(GCONV_FLAGS) -o coverage_report.html
 
 .PHONY: clean all
 
 clean:
-	-rm *.o *.html *.gcda *.gcno check_mdc_tests
+	-rm -f *.o *.html *.css *.gcda *.gcno check_mdc_runner
