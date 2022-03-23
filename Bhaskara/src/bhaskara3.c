@@ -1,28 +1,22 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
-#include "mdc.h"
+#include "bhaskara.h"
 /**
-* Incluído a função ABS, que retorna o valor absoluto no final da função.
-* Esse recurso foi implementado para o algoritmo trazer o resultado correto no caso do usuário entrar com valores negativos.
-* @author Yuri Feitosa
-* @problem Calcular o Máximo Divisor Comum entre dois números (MDC).
+* Estrutura condicional implementada que verirfica se o delta é negativo.
+* @problem Calcular a formula de Bhaskara.
 * @version 03
-* @param a
-* @param b
-* @return mdc
+* @param a,b,c
+* @return x1, x2
 */
-int mdc (int a, int b){
-	int resto;
-	if ((a==0)||(b==0)){
-		return (0);
-		}
-	else
-	while (b != 0){
-		resto = a % b;
-		a = b;
-		b = resto;
-		}
-	a = abs(a);
-	return (a);
-} 
+float bhaskara (float a, float b, float c){
+ 	
+	delta = pow(b,2) - 4*a*c;
+	if(delta < 0) {
+	 	printf("A equação não possui raízes reais!");
+	 	} else {
+		 x1 = (-b + sqrt(delta)) / (2*a);
+		 x2 = (-b - sqrt(delta)) / (2*a);
+		 } 
+	return (x1,x2);	 		 
+}

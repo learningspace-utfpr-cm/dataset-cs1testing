@@ -13,17 +13,17 @@ GCONV_FLAGS = -r . --html --html-details
 
 all: report
 
-mdc%.o: $(addprefix $(SRC_DIR)/, mdc%.c) $(addprefix $(SRC_DIR)/, mdc.h)
+bhaskara%.o: $(addprefix $(SRC_DIR)/, bhaskara%.c) $(addprefix $(SRC_DIR)/, bhaskara.h)
 	$(CC) $(CFLAGS) $(PROFILE_FLAGS) $<
 
-check_mdc.o: $(TST_FILES)
+check_bhaskara.o: $(TST_FILES)
 	$(CC) $(CFLAGS) $(PROFILE_FLAGS) $(TST_FILES) 
 
-check_mdc%: mdc%.o check_mdc.o
-	$(CC) $< check_mdc.o $(TST_LIBS) $(COV_LIBS) -o check_mdc_runner
+check_bhaskara%: bhaskara%.o check_bhaskara.o
+	$(CC) $< check_bhaskara.o $(TST_LIBS) $(COV_LIBS) -o check_bhaskara_runner
 
-test: check_mdc_runner
-	-./check_mdc_runner
+test: check_bhaskara_runner
+	-./check_bhaskara_runner
 
 report: test
 	$(GCOV) $(GCONV_FLAGS) -o coverage_report.html
@@ -31,4 +31,4 @@ report: test
 .PHONY: clean all
 
 clean:
-	-rm -f *.o *.html *.css *.gcda *.gcno check_mdc_runner
+	-rm -f *.o *.html *.css *.gcda *.gcno check_bhaskara_runner
