@@ -14,6 +14,6 @@ float bhaskara (float a, float b, float c){
 	 	} else {
 		x1 = (-b + sqrt(delta)) / (2*a);
 		x2 = (-b - sqrt(delta)) / (2*a);
-	 	return (1);	 		 
+	 	return (2);	 		 
 		} 
 }

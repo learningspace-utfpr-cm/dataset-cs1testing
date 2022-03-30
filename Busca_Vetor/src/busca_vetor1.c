@@ -10,7 +10,7 @@ int Pesquisa_Sequencial(int Vetor[], int Valor, int tamanho_vetor){
 	int i;
 	for (i = 0; i < tamanho_vetor; i++){ // Percorre todo o vetor;
         printf("Digite o valor do indice %d: ",i);
-		scanf ("%d",&Vetor[i]);
+		scanf ("%d",&Vetor[i]);  // Lê o valro inserido no vetor;
     	}
     printf("\n Digite qual valor voce deseja procurar:");
     scanf("%d",&Valor);
