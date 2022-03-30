@@ -1,7 +1,7 @@
 #include <check.h>
 #include <stdlib.h>
 #include <math.h>
-#include "../src/ bhaskara.h"
+#include "../src/bhaskara.h"
 
 /**
 *Caso de Teste 01
@@ -17,7 +17,7 @@ START_TEST(test_bhaskara_01) {
 *Conjunto de valores de entrada similar ao do Caso de Teste 01, entretanto, com valores diferentes.
 **/
 START_TEST(test_bhaskara_02) {
-  ck_assert_int_eq(bhaskara(2,0,-18),1);
+  ck_assert_int_eq(bhaskara(2,0,-18),2);
 } END_TEST 
 
 /**
@@ -26,7 +26,7 @@ START_TEST(test_bhaskara_02) {
 *N√£o √© necess√°rio nenhuma outra implementa√ß√£o pois o algoritmo atende essa condi√ß√£o.
 **/
 START_TEST(test_bhaskara_03) {
-  ck_assert_int_eq(bhaskara(-2,20,-50),1);
+  ck_assert_int_eq(bhaskara(-2,20,-50),2);
 } END_TEST 
 
 /**
@@ -39,7 +39,7 @@ START_TEST(test_bhaskara_04) {
 
 /**
 *Caso de Teste 05
-*Caso de teste que valida a possibilidade do pametro A ser igual a zero (equaÁ„o do primeiro grau).
+*Caso de teste que valida a possibilidade do parametro 'A' ser igual a zero (equaÁ„o do primeiro grau).
 *
 **/
 START_TEST(test_bhaskara_05) {

@@ -22,7 +22,7 @@ check_bhaskara.o: $(TST_FILES)
 check_bhaskara%: bhaskara%.o check_bhaskara.o
 	$(CC) $< check_bhaskara.o $(TST_LIBS) $(COV_LIBS) -o check_bhaskara_runner
 
-test: check_bhaskara_runner
+test: check_bhaskara3
 	-./check_bhaskara_runner
 
 report: test

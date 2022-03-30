@@ -53,19 +53,19 @@ Suite *busca_vetor_suite(void) {
   s = suite_create("busca_vetor");
   tc_core = tcase_create("Core");
 
-  tcase_add_test(tc_core, test_mdc_01);
+  tcase_add_test(tc_core, test_busca_vetor_01);
   suite_add_tcase(s, tc_core); 
 
-  tcase_add_test(tc_core, test_mdc_02);
+  tcase_add_test(tc_core, test_busca_vetor_02);
   suite_add_tcase(s, tc_core); 
   
-  tcase_add_test(tc_core, test_mdc_03);
+  tcase_add_test(tc_core, test_busca_vetor_03);
   suite_add_tcase(s, tc_core); 
  
-  tcase_add_test(tc_core, test_mdc_04);
+  tcase_add_test(tc_core, test_busca_vetor_04);
   suite_add_tcase(s, tc_core); 
   
-  tcase_add_test(tc_core, test_mdc_05);   
+  tcase_add_test(tc_core, test_busca_vetor_05);   
   suite_add_tcase(s, tc_core); 
 
   return s;

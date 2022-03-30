@@ -13,17 +13,17 @@ GCONV_FLAGS = -r . --html --html-details
 
 all: report
 
-mdc%.o: $(addprefix $(SRC_DIR)/, mdc%.c) $(addprefix $(SRC_DIR)/, mdc.h)
+busca_vetor%.o: $(addprefix $(SRC_DIR)/, busca_vetor%.c) $(addprefix $(SRC_DIR)/, busca_vetor.h)
 	$(CC) $(CFLAGS) $(PROFILE_FLAGS) $<
 
-check_mdc.o: $(TST_FILES)
+check_busca_vetor.o: $(TST_FILES)
 	$(CC) $(CFLAGS) $(PROFILE_FLAGS) $(TST_FILES) 
 
-check_mdc%: mdc%.o check_mdc.o
-	$(CC) $< check_mdc.o $(TST_LIBS) $(COV_LIBS) -o check_mdc_runner
+check_busca_vetor%: busca_vetor%.o check_busca_vetor.o
+	$(CC) $< check_busca_vetor.o $(TST_LIBS) $(COV_LIBS) -o check_busca_vetor_runner
 
-test: check_mdc_runner
-	-./check_mdc_runner
+test: check_busca_vetor1
+	-./check_busca_vetor_runner
 
 report: test
 	$(GCOV) $(GCONV_FLAGS) -o coverage_report.html
@@ -31,4 +31,4 @@ report: test
 .PHONY: clean all
 
 clean:
-	-rm -f *.o *.html *.css *.gcda *.gcno check_mdc_runner
+	-rm -f *.o *.html *.css *.gcda *.gcno check_busca_vetor_runner
