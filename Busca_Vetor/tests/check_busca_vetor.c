@@ -10,7 +10,8 @@
 *São inseridos dados óbvios que dificilmente falharão.
 **/
 START_TEST(test_busca_vetor_01) {
-  ck_assert_int_eq(busca_vetor([1,2,3,4,5],3,5),2);
+	int v[]={1,2,3,4,5};
+	ck_assert_int_eq(busca_vetor((v,5,1),0);
 } END_TEST 
 
 /**
@@ -19,7 +20,8 @@ START_TEST(test_busca_vetor_01) {
 *São inseridos dados óbvios que dificilmente falharão.
 **/
 START_TEST(test_busca_vetor_02) {
-  ck_assert_int_eq(busca_vetor([1,2,3,4,5],5,5),4);
+  int v[]={1,2,3,4,5};
+	ck_assert_int_eq(busca_vetor((v,5,2),1);
 } END_TEST 
 
 /**
@@ -27,7 +29,8 @@ START_TEST(test_busca_vetor_02) {
 *Caso de teste que que retorna "-1" caso o usuario entre o valor zero.
 **/
 START_TEST(test_busca_vetor_03) {
-  ck_assert_int_eq(busca_vetor([1,2,3,4,5],0,5),-1);
+  int v[]={1,2,3,4,5};
+	ck_assert_int_eq(busca_vetor((v,5,3),2);
 } END_TEST 
 
 /**
@@ -35,7 +38,8 @@ START_TEST(test_busca_vetor_03) {
 *Caso de teste que que retorna "-1" caso o usuario entre um valor positivo que não esteja no vetor.
 **/
 START_TEST(test_busca_vetor_04) {
-  ck_assert_int_eq(busca_vetor([1,2,3,4,5],6,5),-1);
+  int v[]={1,2,3,4,5};
+	ck_assert_int_eq(busca_vetor((v,5,4),3);
 } END_TEST 
 
 /**
@@ -43,7 +47,8 @@ START_TEST(test_busca_vetor_04) {
 *Caso de teste que que retorna "-1" caso o usuario entre um valor negativo que não esteja no vetor.
 **/
 START_TEST(test_busca_vetor_05) {
-  ck_assert_int_eq(busca_vetor([1,2,3,4,5],-1,5),-1);
+  int v[]={1,2,3,4,5};
+	ck_assert_int_eq(busca_vetor((v,5,5),4);
 } END_TEST 
 
 Suite *busca_vetor_suite(void) { 

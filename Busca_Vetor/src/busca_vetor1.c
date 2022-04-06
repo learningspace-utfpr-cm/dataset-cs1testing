@@ -6,18 +6,13 @@
 * @Busca de um número em um vetor.
 **/
 
-int Pesquisa_Sequencial(int Vetor[], int Valor, int tamanho_vetor){
-	int i;
-	for (i = 0; i < tamanho_vetor; i++){ // Percorre todo o vetor;
-        printf("Digite o valor do indice %d: ",i);
-		scanf ("%d",&Vetor[i]);  // Lê o valro inserido no vetor;
-    	}
-    printf("\n Digite qual valor voce deseja procurar:");
-    scanf("%d",&Valor);
-	for ( i=0; i < tamanho_vetor; i++){ // Percorre todo o vetor;
-		if ( Valor == Vetor[i] ){ // Testa se o valor que está passando é a "chave";
-            return i; // Retorna a posição em que foi encontrado o valor;
+int busca_vetor (int *v, int tamanho_vetor, int valor) {
+	
+	if tamanho_vetor 
+	
+    for (int i = 0; i < tamanho_vetor; i++) {
+   		if (v[i]==valor){
+        	return i; 
         }
      }
-     return -1; // Retorna -1 se não for encontrado;
-} 
+    }
