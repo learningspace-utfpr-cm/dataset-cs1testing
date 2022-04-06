@@ -7,6 +7,6 @@
 * @return i - Se o algoritmo localizar o valor no vetor, retornará nessa variável
 * @return -1 - Se o algoritmo não localizar o valor no vetor, retornará "-1"
 */
-int busca_vetor (int *v, int tamanho_vetor, int valor) {
+int busca_vetor (int *v, int tamanho_vetor, int valor) ;
 
 #endif

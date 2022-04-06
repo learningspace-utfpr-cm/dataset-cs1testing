@@ -11,7 +11,7 @@
 **/
 START_TEST(test_busca_vetor_01) {
 	int v[]={1,2,3,4,5};
-	ck_assert_int_eq(busca_vetor((v,5,1),0);
+	ck_assert_int_eq(busca_vetor(v,5,1),0);
 } END_TEST 
 
 /**
@@ -21,7 +21,7 @@ START_TEST(test_busca_vetor_01) {
 **/
 START_TEST(test_busca_vetor_02) {
   int v[]={1,2,3,4,5};
-	ck_assert_int_eq(busca_vetor((v,5,2),1);
+	ck_assert_int_eq(busca_vetor(v,5,2),1);
 } END_TEST 
 
 /**
@@ -30,7 +30,7 @@ START_TEST(test_busca_vetor_02) {
 **/
 START_TEST(test_busca_vetor_03) {
   int v[]={1,2,3,4,5};
-	ck_assert_int_eq(busca_vetor((v,5,3),2);
+	ck_assert_int_eq(busca_vetor(v,5,3),2);
 } END_TEST 
 
 /**
@@ -39,7 +39,7 @@ START_TEST(test_busca_vetor_03) {
 **/
 START_TEST(test_busca_vetor_04) {
   int v[]={1,2,3,4,5};
-	ck_assert_int_eq(busca_vetor((v,5,4),3);
+	ck_assert_int_eq(busca_vetor(v,5,4),3);
 } END_TEST 
 
 /**
@@ -48,7 +48,7 @@ START_TEST(test_busca_vetor_04) {
 **/
 START_TEST(test_busca_vetor_05) {
   int v[]={1,2,3,4,5};
-	ck_assert_int_eq(busca_vetor((v,5,5),4);
+	ck_assert_int_eq(busca_vetor(v,5,5),4);
 } END_TEST 
 
 Suite *busca_vetor_suite(void) { 
