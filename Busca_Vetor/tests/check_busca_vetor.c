@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "../src/busca_vetor.h"
 
-//int Pesquisa_Sequencial(int Vetor[], int Valor, int tamanho_vetor)
+//int busca_vetor (int *v, int tamanho_vetor, int valor) {
 
 /**
 *Caso de Teste 01

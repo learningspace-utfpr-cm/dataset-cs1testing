@@ -7,9 +7,7 @@
 **/
 
 int busca_vetor (int *v, int tamanho_vetor, int valor) {
-	
-	if tamanho_vetor 
-	
+		
     for (int i = 0; i < tamanho_vetor; i++) {
    		if (v[i]==valor){
         	return i; 
