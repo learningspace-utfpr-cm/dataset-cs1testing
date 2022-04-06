@@ -7,9 +7,9 @@
 * @solution Implementado rotida que verifica se o A é igual zero
 * caso for, o algoritmo será resolvido como equação do segundo grau.
 */
-float bhaskara (float a, float b, float c){
+float bhaskara (float a, float b, float c, float *x1, float *x2){
 
-float x, x1, x2, delta;  
+float x, delta;  
   
  if (a==0){
  	//bx + c = 0
@@ -28,8 +28,8 @@ float x, x1, x2, delta;
 	 } 
 		 else 
 		 {
-		 x1 = (-b + sqrt(delta)) / (2*a);
-		 x2 = (-b - sqrt(delta)) / (2*a);
+		 *x1 = (-b + sqrt(delta)) / (2*a);
+		 *x2 = (-b - sqrt(delta)) / (2*a);
 		 //printf("O valor de x1: %.2f\n", x1);
 		 //printf("O valor de x2: %.2f\n", x2);
 		 return (2);
