@@ -9,6 +9,6 @@
 * @return 1 Retorna equação do primeiro grau
 * @return 2 Retorna equação do segundo grau
 **/
-float bhaskara(float a, float b, float c);
+float bhaskara(float a, float b, float c, float *x1, float *x2);
 
 #endif

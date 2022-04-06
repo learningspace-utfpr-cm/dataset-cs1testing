@@ -9,7 +9,7 @@
 *são inseridos dados óbvios que dificilmente falharão.
 **/
 START_TEST(test_bhaskara_01) {
-  ck_assert_int_eq(bhaskara(-1,2,3),2);
+  ck_assert_int_eq(bhaskara(-1,2,3,0,0),2);
 } END_TEST 
 
 /**
@@ -17,7 +17,7 @@ START_TEST(test_bhaskara_01) {
 *Conjunto de valores de entrada similar ao do Caso de Teste 01, entretanto, com valores diferentes.
 **/
 START_TEST(test_bhaskara_02) {
-  ck_assert_int_eq(bhaskara(2,0,-18),2);
+  ck_assert_int_eq(bhaskara(2,0,-18,0,0),2);
 } END_TEST 
 
 /**
@@ -26,7 +26,7 @@ START_TEST(test_bhaskara_02) {
 *Não é necessário nenhuma outra implementação pois o algoritmo atende essa condição.
 **/
 START_TEST(test_bhaskara_03) {
-  ck_assert_int_eq(bhaskara(-2,20,-50),2);
+  ck_assert_int_eq(bhaskara(-2,20,-50,0,0),2);
 } END_TEST 
 
 /**
@@ -34,7 +34,7 @@ START_TEST(test_bhaskara_03) {
 *Caso de teste que valida a possibilidade do delta ser negativo.
 **/
 START_TEST(test_bhaskara_04) {
-  ck_assert_int_eq(bhaskara(1,-4,10),-1);
+  ck_assert_int_eq(bhaskara(1,-4,10,0,0),-1);
 } END_TEST 
 
 /**
@@ -43,7 +43,7 @@ START_TEST(test_bhaskara_04) {
 *
 **/
 START_TEST(test_bhaskara_05) {
-  ck_assert_int_eq(bhaskara(0,2,3),1);
+  ck_assert_int_eq(bhaskara(0,2,3,0,0),1);
 } END_TEST 
 
 Suite *mdc_suite(void) { 

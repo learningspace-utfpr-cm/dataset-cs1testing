@@ -9,7 +9,6 @@
 */
 float bhaskara (float a, float b, float c, float *x1, float *x2){
 
-float x, delta;  
   
  if (a==0){
  	//bx + c = 0
@@ -18,7 +17,7 @@ float x, delta;
 	return (1);
 } 
  
- delta = pow(b,2) - 4*a*c;
+float delta = pow(b,2) - 4*a*c;
  //printf ("O valor de delta é %f\n",delta); 
 
  if(delta < 0) 
