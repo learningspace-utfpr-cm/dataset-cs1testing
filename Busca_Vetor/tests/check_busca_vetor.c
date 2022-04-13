@@ -26,7 +26,8 @@ START_TEST(test_busca_vetor_02) {
 
 /**
 *Caso de Teste 03
-*Caso de teste que que retorna "-1" caso o usuario entre o valor zero.
+*Este conjunto de teste é referente ao cenario mais simples e intuitivo possível,
+*São inseridos dados óbvios que dificilmente falharão.
 **/
 START_TEST(test_busca_vetor_03) {
   int v[]={1,2,3,4,5};
@@ -35,20 +36,19 @@ START_TEST(test_busca_vetor_03) {
 
 /**
 *Caso de Teste 04
-*Caso de teste que que retorna "-1" caso o usuario entre um valor positivo que não esteja no vetor.
-**/
+*Caso de teste que que retorna "-1" caso o usuario entre com o tamanho de vetor menor do que o tamanho real dele.**/
 START_TEST(test_busca_vetor_04) {
   int v[]={1,2,3,4,5};
-	ck_assert_int_eq(busca_vetor(v,5,4),3);
+	ck_assert_int_eq(busca_vetor(v,4,4),-1);
 } END_TEST 
 
 /**
 *Caso de Teste 05
-*Caso de teste que que retorna "-1" caso o usuario entre um valor negativo que não esteja no vetor.
+*Caso de teste que que retorna "-1" caso o usuario entre com o tamanho de vetor maior do que o tamanho real dele.
 **/
 START_TEST(test_busca_vetor_05) {
   int v[]={1,2,3,4,5};
-	ck_assert_int_eq(busca_vetor(v,5,5),4);
+	ck_assert_int_eq(busca_vetor(v,6,5),-1);
 } END_TEST 
 
 Suite *busca_vetor_suite(void) { 
