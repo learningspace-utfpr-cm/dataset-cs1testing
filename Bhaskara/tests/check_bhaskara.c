@@ -9,8 +9,10 @@
 *são inseridos dados óbvios que dificilmente falharão.
 **/
 START_TEST(test_bhaskara_01) {
-  int raiz1, raiz2;	
+  float raiz1, raiz2;	
   ck_assert_int_eq(bhaskara(-1,2,3,&raiz1,&raiz2),2);
+  ck_assert_float_eq(raiz1,-1);
+  ck_assert_float_eq(raiz2,3);
 } END_TEST 
 
 /**
@@ -18,8 +20,10 @@ START_TEST(test_bhaskara_01) {
 *Conjunto de valores de entrada similar ao do Caso de Teste 01, entretanto, com valores diferentes.
 **/
 START_TEST(test_bhaskara_02) {
-  int raiz1, raiz2;
+  float raiz1, raiz2;
   ck_assert_int_eq(bhaskara(2,0,-18,&raiz1,&raiz2),2);
+  ck_assert_float_eq(raiz1,3);
+  ck_assert_float_eq(raiz2,-3);
 } END_TEST 
 
 /**
@@ -28,8 +32,11 @@ START_TEST(test_bhaskara_02) {
 *Não é necessário nenhuma outra implementação pois o algoritmo atende essa condição.
 **/
 START_TEST(test_bhaskara_03) {
-  int raiz1, raiz2;
+  float raiz1, raiz2;
   ck_assert_int_eq(bhaskara(-2,20,-50,&raiz1,&raiz2),2);
+  ck_assert_float_eq(raiz1,5);
+  ck_assert_float_eq(raiz2,5);
+  ck_assert_float_eq(raiz1,raiz2);
 } END_TEST 
 
 /**
@@ -47,7 +54,7 @@ START_TEST(test_bhaskara_04) {
 **/
 START_TEST(test_bhaskara_05) {
   ck_assert_int_eq(bhaskara(0,2,3,0,0),1);
-} END_TEST 
+  } END_TEST 
 
 Suite *mdc_suite(void) { 
   Suite *s;
