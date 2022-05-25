@@ -26,12 +26,11 @@ START_TEST(test_busca_vetor_02) {
 
 /**
 *Caso de Teste 03
-*Este conjunto de teste é referente ao cenario mais simples e intuitivo possível,
-*São inseridos dados óbvios que dificilmente falharão.
+*Se o usuário informar um valor que não existe no vetor, o retorno será zero.
 **/
 START_TEST(test_busca_vetor_03) {
   int v[]={1,2,3,4,5};
-	ck_assert_int_eq(busca_vetor(v,5,3),2);
+	ck_assert_int_eq(busca_vetor(v,5,7),0);
 } END_TEST 
 
 /**
