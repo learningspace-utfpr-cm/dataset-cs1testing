@@ -1,15 +1,21 @@
-def busca (v, tamanho_vetor,valor):
+def busca (v,valor):
 
     contador = len(v);
-
-    if(contador!=tamanho_vetor):
+    
+    if(contador!=5):
+        print ("vetor de tamanho diferente")
         return -1;
     else:
-        for i in range (tamanho_vetor):
+        for i in range (contador):
             if v[i] == valor:
+                print("O valor ",v[i], " está no índice: ", i)
                 return i;
-    return 0;
+
+    return -1;
 
 
-vetor[5] = [17, 42, 9, 33, 12]
-resultado = busca(vetor,5,1)
+
+vetor = [17, 42, 19, 33, 15, 34]
+
+resultado = busca(vetor,17)
+print (resultado)
