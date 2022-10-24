@@ -2,6 +2,6 @@
 
 int divi (int a, int b){
 float res;
-r = a/b;
+res = a/b;
 return (res);
 }
