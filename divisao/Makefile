@@ -11,24 +11,24 @@ GCOV = gcovr
 GCONV_FLAGS = -r . --html --html-details 
 
 
-all: coverage_report.html
+all: report
 
-divi.o:  $(SRC_FILES) $(addprefix $(SRC_DIR)/, divi.h)
-	$(CC) $(CFLAGS) $(PROFILE_FLAGS) $(SRC_FILES) 
+divi%.o: $(addprefix $(SRC_DIR)/, divi%.c) $(addprefix $(SRC_DIR)/, divi.h)
+	$(CC) $(CFLAGS) $(PROFILE_FLAGS) $<
 
 check_divi.o: $(TST_FILES)
 	$(CC) $(CFLAGS) $(PROFILE_FLAGS)  $(TST_FILES) 
 
-check_divi_tests: divi.o check_divi.o
-	$(CC) divi.o check_divi.o $(TST_LIBS) $(COV_LIBS) -o check_divi_tests
+check_divi%: divi%.o check_divi.o
+	$(CC) $< check_divi.o $(TST_LIBS) $(COV_LIBS) -o check_divi_runner
 
-test: check_divi_tests
-	-./check_divi_tests
+test: check_divi_runner
+	-./check_divi_runner
 
-coverage_report.html: test
+report: test
 	$(GCOV) $(GCONV_FLAGS) -o coverage_report.html
 
 .PHONY: clean all
 
 clean:
-	-rm *.o *.html *.gcda *.gcno check_divi_tests
+	-rm *.o *.html *.css *.gcda *.gcno check_divi_runner
