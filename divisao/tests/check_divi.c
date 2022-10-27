@@ -16,11 +16,11 @@ START_TEST(test_divi_03) {
 
 
 START_TEST(test_divi_04) {
-  ck_assert_float_eq(divi(10,4),2.5); //verificar FLOAT
+  ck_assert_int_eq(divi(10,4),2);
 } END_TEST 
 
 START_TEST(test_divi_05) {
-  ck_assert_int_eq(divi(7,2),3.5);
+  ck_assert_int_eq(divi(8,2),4);
 } END_TEST 
 
 Suite *divi_suite(void) { 

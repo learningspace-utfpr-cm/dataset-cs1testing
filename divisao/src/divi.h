@@ -1,6 +1,6 @@
 #ifndef DIVI_H
 #define DIVI_H
 
-float divi (int a, int b);
+int divi (int a, int b);
 
 #endif
