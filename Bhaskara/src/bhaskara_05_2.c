@@ -12,8 +12,8 @@ if(a == 0) {
      return (1);
      } else {
           del  = sqrt(pow(b, 2) - ((4 * a) * c));
-          x1 = (- b + del)/ (2 * a);
-          x2 = (- b - del)/ (2 * a);
+          *x1 = (- b + del)/ (2 * a);
+          *x2 = (- b - del)/ (2 * a);
           return (2);
         }
 }

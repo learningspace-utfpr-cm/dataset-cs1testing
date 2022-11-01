@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-float divi (float dividen, float divis){
-float resul;
+int divi (int dividen, int divis){
+int resul;
 resul = dividen/divis;
 	if (divis==0){
 	return (0);

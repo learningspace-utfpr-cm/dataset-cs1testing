@@ -11,7 +11,7 @@ if(a=0){
         return (1);
 }
 delta= (b*b) - ((4*a)*c);
-x1= (-b + sqrt(delta) )/ 2*a;
-x2= (-b - sqrt(delta) )/ 2*a;
+*x1= (-b + sqrt(delta) )/ 2*a;
+*x2= (-b - sqrt(delta) )/ 2*a;
 return (2);
 }

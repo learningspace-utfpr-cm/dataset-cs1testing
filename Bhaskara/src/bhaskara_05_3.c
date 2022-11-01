@@ -15,8 +15,8 @@ if(a == 0) {
          if(del < 0) {
                 return (-1);
                 } else {
-                        x1 = (- b + sqrt(del))/ (2 * a);
-                        x2 = (- b - sqrt(del))/ (2 * a);
+                        *x1 = (- b + sqrt(del))/ (2 * a);
+                        *x2 = (- b - sqrt(del))/ (2 * a);
                         return (2);
                 }        
         } 

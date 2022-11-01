@@ -16,8 +16,8 @@ int delta,valor;
   
   else{
   
-  x1 = -b + sqrt(delta) / 2*a ;
-  x2 = -b - sqrt(delta) / 2*a ;
+  *x1 = -b + sqrt(delta) / 2*a ;
+  *x2 = -b - sqrt(delta) / 2*a ;
   
   return (2);  
 }

@@ -9,11 +9,11 @@ int del;
         
 if (a != 0 ){
   del = pow (y, 2) - (4*x*z);
-  x2 = (- y - del) / (2 * x);
-  x1 = (- y +del) / (2 * x);
+  *x2 = (- y - del) / (2 * x);
+  *x1 = (- y +del) / (2 * x);
   return (2);
   } else {
-  x1 = z/y;
+  *x1 = z/y;
   return (1); 
 }
 }

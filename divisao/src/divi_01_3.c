@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-double divi (double nm, double nmr){
-double tot;
+int divi (int nm, int nmr){
+int tot;
 	if (nmr == 0){
         return (0);
         }        

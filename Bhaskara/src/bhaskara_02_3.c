@@ -15,11 +15,11 @@ float bhaskara (float a, float b, float c, float *x1, float *x2){
                         return (-1);        
                 }
                 
-                x1 = (-b + sqrt(del)) / (2 * a);
-                x2 = (-b - sqrt(del)) / (2 * a);
+                *x1 = (-b + sqrt(del)) / (2 * a);
+                *x2 = (-b - sqrt(del)) / (2 * a);
                 return (2);        
         } else {
-                x1 = c/b;
+                *x1 = c/b;
                 return (1);        
         }
 }

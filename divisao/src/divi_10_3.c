@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-float divi (float num, float num2){
-float resultado;
+int divi (int num, int num2){
+int resultado;
 	if(num2==0){
 	return (0);
 	} else{

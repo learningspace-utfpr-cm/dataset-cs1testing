@@ -10,8 +10,8 @@ if(a == 0) {
    return (1);
         }
         else {
-             x = (-b + sqrt(delta) )/ 2 * a;                
-             y = (-b - sqrt(delta) )/ 2 * a;
+             *x = (-b + sqrt(delta) )/ 2 * a;                
+             *y = (-b - sqrt(delta) )/ 2 * a;
              return (2);
 }
 }

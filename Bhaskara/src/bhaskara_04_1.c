@@ -9,8 +9,8 @@ int del;
         
 del = pow (y, 2) - (4*x*z);
         
-x2 = (- y - del) / (2 * x);
-x1 = (- y +del) / (2 * x);
+*x2 = (- y - del) / (2 * x);
+*x1 = (- y +del) / (2 * x);
         
 return (2);
 }

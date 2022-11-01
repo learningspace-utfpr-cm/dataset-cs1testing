@@ -11,8 +11,8 @@ valorB1 = valorB * valorB;
 
 bhaskara = valorB1 - 4 * valorA * valorC;
 
-x1 = (-valorB + sqrt(bhaskara))/2*valorA;
-x2 = (-valorB - sqrt(bhaskara))/2*valorA;
+*x1 = (-valorB + sqrt(bhaskara))/2*valorA;
+*x2 = (-valorB - sqrt(bhaskara))/2*valorA;
 
 return (2);
 

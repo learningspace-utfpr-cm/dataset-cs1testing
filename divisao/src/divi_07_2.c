@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int divi (int a, int b){
-float res;
+int res;
 res = a/b;
 return (res);
 }

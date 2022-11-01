@@ -17,8 +17,8 @@ return (1);
 }
 
 else{
-x1 = (-valorB + sqrt(bhaskara))/2*valorA;
-x2 = (-valorB - sqrt(bhaskara))/2*valorA;
+*x1 = (-valorB + sqrt(bhaskara))/2*valorA;
+*x2 = (-valorB - sqrt(bhaskara))/2*valorA;
 return (2);
 }
 }

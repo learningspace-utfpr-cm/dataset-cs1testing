@@ -14,11 +14,11 @@ if (a != 0 ){
       return (-1);
    }
        
-   x2 = (- y - sqrt(del)) / (2 * x);
-   x1 = (- y +sqrt(del)) / (2 * x);
+   *x2 = (- y - sqrt(del)) / (2 * x);
+   *x1 = (- y +sqrt(del)) / (2 * x);
    return (2);
    } else {
-        x1 = z/y;
+        *x1 = z/y;
         return (1);
 }
 }

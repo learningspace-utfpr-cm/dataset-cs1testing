@@ -9,7 +9,7 @@ float delt;
 
 delt = (b*b) - (4*a*c);
 
-x1 = -b + sqrt(delt) /(2*a);
-x2 = -b - sqrt(delt) /(2*a);
+*x1 = -b + sqrt(delt) /(2*a);
+*x2 = -b - sqrt(delt) /(2*a);
 return (2);
 }
