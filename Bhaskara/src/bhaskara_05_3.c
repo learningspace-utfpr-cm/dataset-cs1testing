@@ -8,7 +8,7 @@ float bhaskara (float a, float b, float c, float *x1, float *x2){
 float del;
         
 if(a == 0) {
-     x1 = c / b;
+     *x1 = c / b;
      return (1);
      } else {
          del  = pow(b, 2) - ((4 * a) * c);
@@ -20,4 +20,5 @@ if(a == 0) {
                         return (2);
                 }        
         } 
+}
      

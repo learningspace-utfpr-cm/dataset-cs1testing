@@ -5,14 +5,14 @@
 
 float bhaskara (float valorA, float valorB, float valorC, float *x1, float *x2){
 
-float bhaskara,valorB1;
+float bhaskara,valorB1,x;
 
 valorB1 = valorB * valorB;
 
 bhaskara = valorB1 - 4 * valorA * valorC;
 
 if (valorA==0){
-x = (-valorC / ValorB);        
+x = (-valorC / valorB);        
 return (1);
 }
 

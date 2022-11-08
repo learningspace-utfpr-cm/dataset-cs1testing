@@ -3,9 +3,9 @@
 #include <math.h>
 #include "bhaskara.h"
 
-float bhaskara (float a, float b, float c, float *x1, float *x2){
+float bhaskara (float x, float y, float z, float *x1, float *x2){
 
-int del;
+int del,a;
         
 if (a != 0 ){
   del = pow (y, 2) - (4*x*z);

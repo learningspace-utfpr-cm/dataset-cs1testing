@@ -5,7 +5,7 @@
 
 float bhaskara (float a, float b, float c, float *x1, float *x2){
 
-float delta;
+float delta,p;
 if(a=0){
         p=-(c/b);
         return (1);
