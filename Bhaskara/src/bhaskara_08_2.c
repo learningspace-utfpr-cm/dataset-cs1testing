@@ -10,7 +10,7 @@ int delta,valor;
   delta = b*b-4*a*c;  
   
    if(a==0) {
-            valor= (-c)/b;
+            //valor= (-c)/b;
             return (1);
    }
   

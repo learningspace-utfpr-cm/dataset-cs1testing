@@ -10,7 +10,8 @@ float del;
 if(a == 0) {
      *x1 = c / b;
      return (1);
-     } else {
+     }
+     else {
          del  = pow(b, 2) - ((4 * a) * c);
          if(del < 0) {
                 return (-1);

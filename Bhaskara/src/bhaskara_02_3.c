@@ -19,7 +19,7 @@ float bhaskara (float a, float b, float c, float *x1, float *x2){
                 *x2 = (-b - sqrt(del)) / (2 * a);
                 return (2);        
         } else {
-                *x1 = c/b;
+                //*x1 = c/b;
                 return (1);        
         }
 }

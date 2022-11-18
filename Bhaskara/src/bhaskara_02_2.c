@@ -15,7 +15,7 @@ float del;
                 return (2);
                 
         } else {
-                *x1 = c/b;
+                //*x1 = c/b;
                 return (1);
         }
 }

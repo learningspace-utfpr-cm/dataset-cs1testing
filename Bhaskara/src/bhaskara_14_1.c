@@ -16,4 +16,3 @@ float delta;
         }
         return (2);
         }
-}

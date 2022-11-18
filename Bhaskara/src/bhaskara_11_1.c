@@ -15,3 +15,4 @@ delta = b*b - 4*a*c;
  } else {
  return (2);
  }
+}

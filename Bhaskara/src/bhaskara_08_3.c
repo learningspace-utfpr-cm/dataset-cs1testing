@@ -15,8 +15,8 @@ float bhaskara (float a, float b, float c, float *x1, float *x2){
   
   else if(a==0) {
           
-           valor= (-c)/b;
-           return (-1);
+           //valor= (-c)/b;
+           return (1);
    }
    else {
   
